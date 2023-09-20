@@ -1,1 +1,0 @@
-"use strict";var t=require("next/dynamic"),r=require("react");const n=t(()=>Promise.resolve().then(function(){return require("./Button.js")}).then(e=>e.Button));function u({showButton:e}){return e?r.createElement(n,null):r.createElement("h2",null,"Card")}exports.Card=u;
