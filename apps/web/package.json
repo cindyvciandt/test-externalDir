@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rimraf node_modules dist .next"
+    "clean": "rimraf node_modules dist .next .turbo"
   },
   "dependencies": {
     "next": "^13.1.1",

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Hello from '../components/Hello'
 import dynamic from 'next/dynamic'
-import { Card, Header, Message } from 'ui'
+import { Card, Header } from 'ui'
 
 export default function About(): JSX.Element {
   const [showComp, SetShowComp] = useState(false)

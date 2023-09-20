@@ -4,7 +4,7 @@ module.exports = {
   experimental: {
     forceSwcTransforms: true,
     esmExternals: false,
-    externalDir: true,
+    // externalDir: true, // broke app
   },
   webpack: (config) => {
     console.log(config)

@@ -8,7 +8,7 @@
   "scripts": {
    "build": "rimraf dist && rollup -c",
    "lint": "eslint .",
-   "clean": "rimraf node_modules dist"
+   "clean": "rimraf node_modules dist .turbo"
   },
   "exports": {
     ".": {
