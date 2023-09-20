@@ -1,2 +1,1 @@
-export { Message } from './Message.js';
-export { Card } from './Card.js';
+"use strict";var e=require("./Message.js"),r=require("./Card.js"),a=require("./Header.js"),s=require("./Test.css.vanilla.js");exports.Message=e.Message,exports.Card=r.Card,exports.Header=a.Header,exports.test=s.test;

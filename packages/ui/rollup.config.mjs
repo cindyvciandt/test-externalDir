@@ -20,7 +20,7 @@ const plugins = [
   commonjs(),
   esbuild({
     sourceMap: false,
-    minify: false,
+    minify: true,
   })
 ]
 
@@ -34,6 +34,18 @@ function createBundleConfig() {
         {
           dir: 'dist',
           format: 'esm',
+          // entryFileNames: '[name].mjs',
+          entryFileNames({ name }) {
+            return `${name.replace(/\.css$/, '.css.vanilla')}.mjs`
+          },
+          ...outputOptions
+        },
+        {
+          dir: 'dist',
+          format: 'cjs',
+          entryFileNames({ name }) {
+            return `${name.replace(/\.css$/, '.css.vanilla')}.js`
+          },
           ...outputOptions
         },
       ],
@@ -42,7 +54,7 @@ function createBundleConfig() {
     {
       input: 'src/index.ts',
       plugins: [
-        ...plugins,
+        // ...plugins,
         dts(),
       ],
       output: [

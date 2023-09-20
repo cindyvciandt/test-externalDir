@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Hello from '../components/Hello'
 import dynamic from 'next/dynamic'
-import { Card, Message } from 'ui'
+import { Card, Header, Message } from 'ui'
 
 export default function About(): JSX.Element {
   const [showComp, SetShowComp] = useState(false)
@@ -11,6 +11,7 @@ export default function About(): JSX.Element {
   return (
     <div>
       <h1>My Page</h1>
+      <Header/>
       {showComp ? <DynamicGFG /> : <Hello />}
       {showComp ? <Card showButton={showComp} /> : <Hello />}
       <button onClick={() => SetShowComp(!showComp)}>

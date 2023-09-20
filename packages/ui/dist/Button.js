@@ -1,7 +1,1 @@
-import React from 'react';
-
-function Button() {
-  return /* @__PURE__ */ React.createElement("button", null, "Button");
-}
-
-export { Button };
+"use strict";var t=require("react");function n(){return t.createElement("button",null,"Button")}exports.Button=n;

@@ -1,9 +1,1 @@
-import dynamic from 'next/dynamic';
-import React from 'react';
-
-const DynamicButton = dynamic(() => import('./Button.js').then((mod) => mod.Button));
-function Card({ showButton }) {
-  return showButton ? /* @__PURE__ */ React.createElement(DynamicButton, null) : /* @__PURE__ */ React.createElement("h2", null, "Card");
-}
-
-export { Card };
+"use strict";var t=require("next/dynamic"),r=require("react");const n=t(()=>Promise.resolve().then(function(){return require("./Button.js")}).then(e=>e.Button));function u({showButton:e}){return e?r.createElement(n,null):r.createElement("h2",null,"Card")}exports.Card=u;
